@@ -1,0 +1,15 @@
+div {
+    font-family: "Inconsolata", monospace;
+    font-size: 15px;
+}
+
+#link {
+    font-size: 11px;
+    font-family: Menlo, "Bitstream Vera Sans Mono", "Lucida Console", monospace;
+    font-size: 15.5px;
+    padding-right: 5px;
+}
+
+#link a:hover {
+    border-bottom: 3px solid chartreuse;
+}

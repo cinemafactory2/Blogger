@@ -1,0 +1,344 @@
+* {
+    outline: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+center {
+    text-align: center;
+}
+
+h1,
+h2 {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#err-msg {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+pre,
+div {
+    font-family: "Inconsolata", monospace;
+    font-size: 15px;
+}
+a {
+    color: rgb(0, 0, 255);
+    border-bottom: 3px solid chartreuse;
+    text-decoration: none;
+}
+#tle {
+    border-bottom: none;
+}
+pre {
+    white-space: pre-wrap;
+    word-break: keep-all;
+}
+code {
+    text-decoration: underline;
+    text-decoration-color: white;
+    background: lightblue;
+}
+#when a:hover {
+    text-decoration: underline;
+}
+#spin {
+    outline: none;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    padding: 5px;
+    z-index: 100;
+}
+
+#prop {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+#prop:hover {
+    text-decoration: underline;
+}
+
+#frm {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+#frm .global-flash-success,
+#frm .global-flash-failure {
+    text-align: center;
+    margin: auto;
+}
+
+#contentTitle {
+    width: 50vw;
+    height: 2vh;
+    display: inline;
+}
+
+#title {
+    font-size: 1.5em;
+    width: 50%;
+}
+
+#title::placeholder {
+    text-align: center;
+}
+
+.global-flash-success {
+    color: green;
+}
+
+.global-flash-failure {
+    color: red;
+}
+
+.innerContent {
+    margin: auto;
+    width: 60%;
+    border: 1px solid black;
+}
+
+#tle {
+    font-size: 15.5px;
+    padding-right: 5px;
+}
+
+#link {
+    font-size: 25.5px;
+    padding-right: 5px;
+    border-bottom: none;
+}
+
+#link:hover {
+    box-shadow: inset 0 -12px chartreuse;
+}
+
+#st {
+    margin-bottom: 10px;
+}
+
+#store {
+    padding-top: 4em;
+}
+
+#usefulLinks {
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#linkForm {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#urlTitle,
+#url,
+#urlSub {
+    font-size: 1.11em;
+    border-color: black;
+}
+
+#urlTitle,
+#url {
+    width: 30%;
+    height: 1.2em;
+}
+
+#urlSub {
+    width: 5em;
+    text-align: center;
+}
+
+#urlSub:hover {
+    cursor: pointer;
+}
+
+#urlTitle::placeholder,
+#url::placeholder,
+#urlSub::placeholder {
+    text-align: center;
+}
+
+#contn {
+    margin: auto;
+    text-align: center;
+}
+
+#one {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    float: left;
+    margin-left: 10vw;
+}
+
+#two,
+#contn {
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: 15vw;
+}
+
+#nav {
+    padding-top: 15px;
+}
+
+#reddit {
+    border-bottom: none;
+    font-family: Spectral, Merriweather, Georgia, serif;
+    text-transform: capitalize;
+    color: black;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+#when {
+    font-size: 11px;
+    font-family: Menlo, "Bitstream Vera Sans Mono", "Lucida Console", monospace;
+}
+
+#reddit:hover {
+    text-decoration: underline;
+}
+
+#tle:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+#tarea {
+    width: 80%;
+    height: 60vh;
+    outline: none;
+}
+
+textarea {
+    font-size: 15px;
+    outline: none;
+}
+
+#inCont {
+    margin: 20px;
+}
+
+#inCont #oops p {
+    margin: auto;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2em;
+}
+
+#previewContent {
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+#frm1 {
+    text-align: center;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+    #slct,
+    #nav {
+        font-size: 2vh;
+    }
+    time,
+    #created {
+        font-size: 1.5vh;
+    }
+    #tle {
+        font-size: 1.9vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #when {
+        margin: inherit;
+    }
+    #arrow {
+        display: none;
+    }
+    #created,
+    time {
+        font-size: 2vh;
+    }
+    time {
+        text-decoration: underline;
+    }
+    #two,
+    #contn {
+        margin-left: 5px;
+        text-align: center;
+    }
+    #tle {
+        font-size: 2.6vh;
+        margin: auto;
+        display: block;
+    }
+    #nav {
+        margin: 0;
+        font-size: 2.5vh;
+    }
+    #inCont {
+        margin: 25px;
+    }
+}
+
+@media only screen and (max-height: 414px) {
+    #tle,
+    #nav {
+        font-size: 1em;
+    }
+    #inCont {
+        padding: 0;
+        margin: 0;
+    }
+
+    #tarea {
+        width: 90vw;
+        height: 30vh;
+        outline: none;
+    }
+
+    #frm {
+        padding-top: 10%;
+    }
+    textarea {
+        font-size: 10px;
+    }
+
+    #title {
+        font-size: 1em;
+        width: 50%;
+    }
+    #inCont {
+        margin: 20px;
+    }
+}
